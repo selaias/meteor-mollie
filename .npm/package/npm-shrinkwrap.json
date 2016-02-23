@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mollie-api-node": {
+      "version": "1.0.4",
+      "dependencies": {
+        "underscore": {
+          "version": "1.7.0"
+        }
+      }
+    }
+  }
+}
