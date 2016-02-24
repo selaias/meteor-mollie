@@ -1,6 +1,6 @@
 Package.describe({
   name: 'selaias:meteor-mollie',
-  version: '0.0.1',
+  version: '0.1.0',
   summary: 'Wrapper for Mollie Payments node api',
   git: 'https://github.com/selaias/meteor-mollie.git',
   documentation: 'README.md'
@@ -10,9 +10,7 @@ Npm.depends({"mollie-api-node": "1.0.4"});
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.0.2');
-  api.use('ecmascript');
-  api.addFiles('meteor-mollie.js');
-  
+  api.addFiles('meteor-mollie.js', 'server');
   api.export('Mollie', 'server');
 });
 
